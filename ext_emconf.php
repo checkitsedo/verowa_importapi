@@ -11,7 +11,7 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Verowa APIConnector',
+    'title' => 'Verowa API Connector',
     'description' => 'This extension connects to the Verowa API. To use it in your Typo3 project, you need a Verowa instance and an API key.
 
 Verowa is a Swiss organization tool for parishes. Verowa connects your team, manages your rooms and equipment, helps you plan events like church services or meetings and organizes your advertising, service weeks and much more. Verowa informs you about changes and keeps your website up to date with this plugin.',
