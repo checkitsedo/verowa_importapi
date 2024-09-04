@@ -1,7 +1,7 @@
 routeEnhancers:
   EventList:
     type: Extbase
-    extension: VerowaApiconnector
+    extension: VerowaImportapi
     plugin: Eventlist
     routes:
       - routePath: '/seite-{currentPage}'
@@ -23,7 +23,7 @@ routeEnhancers:
       # Event-Detailansicht - benötigt für das allgemeine Routing:
       - 73
       - 90
-    extension: VerowaApiconnector
+    extension: VerowaImportapi
     plugin: Eventdetails
     routes:
       - routePath: '/{event_id}'
@@ -33,5 +33,5 @@ routeEnhancers:
     aspects:
       event_id:
         type: PersistedAliasMapper
-        tableName: 'tx_verowaapiconnector_domain_model_event'
+        tableName: 'tx_verowaimportapi_domain_model_event'
         routeFieldName: 'event_id'
