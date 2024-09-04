@@ -78,32 +78,8 @@ Otherwise your changes will be overwritten the next time you save the extension 
 				</div>
 		
 				<div class="even-location">
-					<!--<i class="fa fa-calendar"></i>-->
 					<time>
-						<!--<span>wednesday 28 december 2014</span>-->
 						<span>
-						
-							<!--<f:for each="{event.rooms}" as="room">
-								<div>
-									{room.locationName}
-									<f:if condition="{room.roomName}">
-										<f:then>
-											| {room.roomName}
-										</f:then>
-									</f:if>
-								</div>
-							</f:for>
-												
-							<f:if condition="{event.roomName}">
-								<f:then>
-									<f:format.nl2br>{event.roomName}</f:format.nl2br>
-								</f:then>
-								<f:else>
-									<f:format.crop maxCharacters="180" append="&nbsp;[...]">
-										<f:format.stripTags>{event.roomName}</f:format.stripTags>
-									</f:format.crop>
-								</f:else>
-							</f:if>-->
 							
 							<f:if condition="{event.rooms}">
 								<f:then>
@@ -138,7 +114,6 @@ Otherwise your changes will be overwritten the next time you save the extension 
 				</div>
 		
 				<div class="even-info">
-					<!--<i class="fa fa-map-marker"></i>-->
 					<p id="even-info">
 						<f:if condition="{event.shortDesc}">
 							<f:then>
