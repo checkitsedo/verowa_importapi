@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Checkit\VerowaApiconnector\Domain\Model;
+namespace Checkit\VerowaImportapi\Domain\Model;
 
 
 /**
