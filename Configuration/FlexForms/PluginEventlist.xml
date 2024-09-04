@@ -4,15 +4,15 @@
 		<sDEF>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang.xlf:plugin.title</sheetTitle>
+					<sheetTitle>LLL:EXT:verowa_importapi/Resources/Private/Language/locallang.xlf:plugin.title</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
 
 					<settings.limitrecords>
 						<TCEforms>
-							<label>LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang.xlf:plugin.limitrecords</label>
-							<description>LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang.xlf:plugin.limitrecords.description</description>
+							<label>LLL:EXT:verowa_importapi/Resources/Private/Language/locallang.xlf:plugin.limitrecords</label>
+							<description>LLL:EXT:verowa_importapi/Resources/Private/Language/locallang.xlf:plugin.limitrecords.description</description>
 							<config>
 								<type>input</type>
 								<size>5</size>
@@ -23,8 +23,8 @@
 					
 					<settings.detailmode>
 						<TCEforms>
-							<label>LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang.xlf:plugin.detailmode</label>
-							<description>LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang.xlf:plugin.detailmode.description</description>
+							<label>LLL:EXT:verowa_importapi/Resources/Private/Language/locallang.xlf:plugin.detailmode</label>
+							<description>LLL:EXT:verowa_importapi/Resources/Private/Language/locallang.xlf:plugin.detailmode.description</description>
 							<onChange>reload</onChange>
 							<config>
 								<type>select</type>
@@ -50,8 +50,8 @@
 
 					<settings.detailpage>
 						<TCEforms>
-							<label>LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang.xlf:plugin.detailpage</label>
-							<description>LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang.xlf:plugin.detailpage.description</description>
+							<label>LLL:EXT:verowa_importapi/Resources/Private/Language/locallang.xlf:plugin.detailpage</label>
+							<description>LLL:EXT:verowa_importapi/Resources/Private/Language/locallang.xlf:plugin.detailpage.description</description>
 							<displayCond>FIELD:settings.detailmode:=:page</displayCond>
 							<config>
 								<type>group</type>
