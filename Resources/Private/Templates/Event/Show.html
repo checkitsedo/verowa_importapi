@@ -1,0 +1,212 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+This template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Event:
+          Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+	
+	<div class="news news-single">
+		
+		<!-- eventDetail header -->
+		<h3>{event.title}</h3>
+		
+		<div class="row">
+		
+			<div class="col-md-8">
+		
+				<div class="even-date">
+					<time>
+						<span>
+							<f:if condition="{event.hideTime}">
+								<f:then>
+									{event.dateFrom -> f:format.date(format: '%d. %B %Y')}
+								</f:then>
+								<f:else>
+									<f:if condition="{event.dateFrom -> f:format.date(format: '%d. %B %Y')} == {event.dateTo -> f:format.date(format: '%d. %B %Y')}">
+										<f:then>
+											{event.dateFrom -> f:format.date(format: '%d. %B %Y')} | 
+										</f:then>
+										<f:else>
+											{event.dateFrom -> f:format.date(format: '%d. %B %Y')}
+										</f:else>
+									</f:if>							
+								</f:else>
+							</f:if>
+					
+							<f:if condition="{event.hideTime}">
+								<f:then></f:then>
+								<f:else>
+									<f:format.date format="H:i">{event.dateFrom}</f:format.date>
+								</f:else>
+							</f:if>
+					
+							<f:if condition="{event.dateFrom -> f:format.date(format: '%d. %B %Y')} == {event.dateTo -> f:format.date(format: '%d. %B %Y')}">
+								<f:then></f:then>
+								<f:else>
+									- {event.dateTo -> f:format.date(format: '%d. %B %Y')}
+								</f:else>
+							</f:if>
+					
+							<f:if condition="{index.allDay}">
+								<f:then>
+									<f:translate key="all_day" />
+								</f:then>
+								<f:else>
+									<f:if condition="{event.hideTime}">
+										<f:then></f:then>
+										<f:else>
+											<f:if condition="{event.dateFrom -> f:format.date(format: 'd.m.Y')} == {event.dateTo -> f:format.date(format: 'd.m.Y')}">
+												-
+											</f:if>
+											<f:format.date format="H:i">{event.dateTo}</f:format.date>
+										</f:else>
+									</f:if>
+								</f:else>
+							</f:if>
+						</span>
+					</time>
+				</div>
+		
+				<div class="even-location">
+					<!--<i class="fa fa-calendar"></i>-->
+					<time>
+						<!--<span>wednesday 28 december 2014</span>-->
+						<span>
+						
+							<!--<f:for each="{event.rooms}" as="room">
+								<div>
+									{room.locationName}
+									<f:if condition="{room.roomName}">
+										<f:then>
+											| {room.roomName}
+										</f:then>
+									</f:if>
+								</div>
+							</f:for>
+												
+							<f:if condition="{event.roomName}">
+								<f:then>
+									<f:format.nl2br>{event.roomName}</f:format.nl2br>
+								</f:then>
+								<f:else>
+									<f:format.crop maxCharacters="180" append="&nbsp;[...]">
+										<f:format.stripTags>{event.roomName}</f:format.stripTags>
+									</f:format.crop>
+								</f:else>
+							</f:if>-->
+							
+							<f:if condition="{event.rooms}">
+								<f:then>
+									<f:for each="{event.rooms}" as="room">
+										<f:if condition="{room.locationName}">
+											<div>
+												{room.locationName}
+												<f:if condition="{room.roomName}">
+													<f:then>
+														| {room.roomName}
+													</f:then>
+												</f:if>
+											</div>
+										</f:if>
+									</f:for>
+								</f:then>
+								<f:else>
+									<f:if condition="{event.roomName}">
+										<f:then>
+											<f:format.crop maxCharacters="100" append="...">
+												<f:format.stripTags>{event.roomName}</f:format.stripTags>
+											</f:format.crop><br />
+										</f:then>
+										<f:else>
+											es wurde kein Raum definiert
+										</f:else>
+									</f:if>
+								</f:else>
+							</f:if>
+						</span>
+					</time>
+				</div>
+		
+				<div class="even-info">
+					<!--<i class="fa fa-map-marker"></i>-->
+					<p id="even-info">
+						<f:if condition="{event.shortDesc}">
+							<f:then>
+								<f:format.nl2br>{event.shortDesc}</f:format.nl2br>
+							</f:then>
+							<f:else>
+								<f:format.html>{event.longDesc}</f:format.html>
+							</f:else>
+						</f:if>
+					</p>
+				</div>
+				
+				<!-- section related files records -->
+				<f:if condition="{event.fileUrl}">
+					<!-- related files -->
+					<div class="row hidden-print mt-4 mb-5">
+						<div class="col-md-12">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<h4>Zugehörige Dateien</h4>
+								</li>
+								<li class="list-group-item">
+									<span class="news-related-files-link">
+										<a href="{event.fileUrl -> f:format.htmlspecialchars()}" target="_blank">
+											{f:if(condition:event.fileDesc, then:event.fileDesc, else:event.fileName)}
+										</a>
+									</span>
+									<span class="news-related-files-size"> {event.fileFilesizeKb -> f:format.bytes()} </span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</f:if>
+		
+			</div>
+		
+			<div class="col-md-4">
+
+				<!-- eventDetail images -->
+				<f:if condition="{event.imageUrl}">
+						<div class="thumbnail">
+							<f:image src="{event.imageUrl}" treatIdAsReference="1" alt="" maxWidth="300" class="img-responsive"/>
+						</div>
+				</f:if>
+		
+			</div>
+		</div>
+		
+	</div>
+	
+	
+    <f:flashMessages />
+    <!--<f:render partial="Event/Properties" arguments="{event:event}" />-->
+	<div class="backbutton">
+		<f:if condition="{event.subsPersonId}">
+			<f:then>
+				<f:link.typolink parameter="{f:uri.page(pageUid: 92, additionalParams: {subs_event_id: '{event.eventId}'}, addQueryString: true)}" target="_blank" class="button btn btn-primary">Anmeldung</f:link.typolink>
+
+				<!--<a class="button btn btn-primary mr-2" target="_blank" href="https://eventfrog.ch/en/p/theatre-stage/experimental-theatre/impro-double-bill-7177621805040906053.html">
+					Anmeldung
+					<span class="glyphicon glyphicon-arrow-right"></span>
+				</a>-->
+			</f:then>
+		</f:if>
+		<f:link.action action="list" pageUid="{settings.listpage}" arguments="{event:event}" class="button btn btn-primary">
+               Zurück
+		</f:link.action>
+		
+	</div><br />
+</f:section>
+</html>
