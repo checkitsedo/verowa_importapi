@@ -1,243 +1,243 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="EXT:verowa_apiconnector/Resources/Private/Language/locallang_db" date="2021-08-08T23:07:21Z" product-name="verowa_apiconnector">
+	<file source-language="en" datatype="plaintext" original="EXT:verowa_importapi/Resources/Private/Language/locallang_db" date="2021-08-08T23:07:21Z" product-name="verowa_importapi">
 		<header/>
 		<body>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event" resname="tx_verowaapiconnector_domain_model_event">
+			<trans-unit id="tx_verowaimportapi_domain_model_event" resname="tx_verowaimportapi_domain_model_event">
 				<source>Event</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.event_id" resname="tx_verowaapiconnector_domain_model_event.event_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.event_id" resname="tx_verowaimportapi_domain_model_event.event_id">
 				<source>Event Id</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.date_from" resname="tx_verowaapiconnector_domain_model_event.date_from">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.date_from" resname="tx_verowaimportapi_domain_model_event.date_from">
 				<source>Date From</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.date_to" resname="tx_verowaapiconnector_domain_model_event.date_to">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.date_to" resname="tx_verowaimportapi_domain_model_event.date_to">
 				<source>Date To</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.date_text" resname="tx_verowaapiconnector_domain_model_event.date_text">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.date_text" resname="tx_verowaimportapi_domain_model_event.date_text">
 				<source>Date Text</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.hide_time" resname="tx_verowaapiconnector_domain_model_event.hide_time">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.hide_time" resname="tx_verowaimportapi_domain_model_event.hide_time">
 				<source>Hide Time</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.title" resname="tx_verowaapiconnector_domain_model_event.title">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.title" resname="tx_verowaimportapi_domain_model_event.title">
 				<source>Title</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.topic" resname="tx_verowaapiconnector_domain_model_event.topic">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.topic" resname="tx_verowaimportapi_domain_model_event.topic">
 				<source>Topic</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.short_desc" resname="tx_verowaapiconnector_domain_model_event.short_desc">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.short_desc" resname="tx_verowaimportapi_domain_model_event.short_desc">
 				<source>Short Desc</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.long_desc" resname="tx_verowaapiconnector_domain_model_event.long_desc">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.long_desc" resname="tx_verowaimportapi_domain_model_event.long_desc">
 				<source>Long Desc</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.organizer" resname="tx_verowaapiconnector_domain_model_event.organizer">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.organizer" resname="tx_verowaimportapi_domain_model_event.organizer">
 				<source>Organizer</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.organizer_name" resname="tx_verowaapiconnector_domain_model_event.organizer_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.organizer_name" resname="tx_verowaimportapi_domain_model_event.organizer_name">
 				<source>Organizer Name</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.organizer_firstname" resname="tx_verowaapiconnector_domain_model_event.organizer_firstname">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.organizer_firstname" resname="tx_verowaimportapi_domain_model_event.organizer_firstname">
 				<source>Organizer Firstname</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.organizer_lastname" resname="tx_verowaapiconnector_domain_model_event.organizer_lastname">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.organizer_lastname" resname="tx_verowaimportapi_domain_model_event.organizer_lastname">
 				<source>Organizer Lastname</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.organizer_person_id" resname="tx_verowaconnector_domain_model_event.organizer_person_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.organizer_person_id" resname="tx_verowaimportapi_domain_model_event.organizer_person_id">
 				<source>Organizer Person ID</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.organizer_email" resname="tx_verowaapiconnector_domain_model_event.organizer_email">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.organizer_email" resname="tx_verowaimportapi_domain_model_event.organizer_email">
 				<source>Organizer Email</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.coorganizers" resname="tx_verowaapiconnector_domain_model_event.coorganizers">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.coorganizers" resname="tx_verowaimportapi_domain_model_event.coorganizers">
 				<source>Co-Organizers</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.further_coorganizer" resname="tx_verowaapiconnector_domain_model_event.further_coorganizer">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.further_coorganizer" resname="tx_verowaimportapi_domain_model_event.further_coorganizer">
 				<source>Further Co-Organizer</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.childcare_id" resname="tx_verowaapiconnector_domain_model_event.childcare_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.childcare_id" resname="tx_verowaimportapi_domain_model_event.childcare_id">
 				<source>Childcare Id</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.subs_date" resname="tx_verowaapiconnector_domain_model_event.subs_date">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.subs_date" resname="tx_verowaimportapi_domain_model_event.subs_date">
 				<source>Subs Date</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.subs_time" resname="tx_verowaapiconnector_domain_model_event.subs_time">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.subs_time" resname="tx_verowaimportapi_domain_model_event.subs_time">
 				<source>Subscribe Time</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.subs_text" resname="tx_verowaapiconnector_domain_model_event.subs_text">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.subs_text" resname="tx_verowaimportapi_domain_model_event.subs_text">
 				<source>Subs Text</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.subs_person_id" resname="tx_verowaapiconnector_domain_model_event.subs_person_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.subs_person_id" resname="tx_verowaimportapi_domain_model_event.subs_person_id">
 				<source>Subs Person Id</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.baptism_offer_id" resname="tx_verowaapiconnector_domain_model_event.baptism_offer_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.baptism_offer_id" resname="tx_verowaimportapi_domain_model_event.baptism_offer_id">
 				<source>Baptism Offer Id</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.baptism_offer_text" resname="tx_verowaapiconnector_domain_model_event.baptism_offer_text">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.baptism_offer_text" resname="tx_verowaimportapi_domain_model_event.baptism_offer_text">
 				<source>Baptism Offer Text</source>
 			</trans-unit>
-                    <trans-unit id="tx_verowaapiconnector_domain_model_event.layers" resname="tx_verowaapiconnector_domain_model_event.layers">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.layers" resname="tx_verowaimportapi_domain_model_event.layers">
 				<source>Layers</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.layer_name" resname="tx_verowaapiconnector_domain_model_event.layer_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.layer_name" resname="tx_verowaimportapi_domain_model_event.layer_name">
 				<source>Layer Name</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.rooms" resname="tx_verowaapiconnector_domain_model_event.rooms">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.rooms" resname="tx_verowaimportapi_domain_model_event.rooms">
 				<source>Rooms</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.room_name" resname="tx_verowaapiconnector_domain_model_event.room_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.room_name" resname="tx_verowaimportapi_domain_model_event.room_name">
 				<source>Room Name</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.file_name" resname="tx_verowaapiconnector_domain_model_event.file_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.file_name" resname="tx_verowaimportapi_domain_model_event.file_name">
 				<source>File Name</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.file_desc" resname="tx_verowaapiconnector_domain_model_event.file_desc">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.file_desc" resname="tx_verowaimportapi_domain_model_event.file_desc">
 				<source>File Desc</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.file_url" resname="tx_verowaapiconnector_domain_model_event.file_url">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.file_url" resname="tx_verowaimportapi_domain_model_event.file_url">
 				<source>File URL</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.file_filesize_kb" resname="tx_verowaapiconnector_domain_model_event.file_filesize_kb">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.file_filesize_kb" resname="tx_verowaimportapi_domain_model_event.file_filesize_kb">
 				<source>File Filesize KB</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.file_filetype" resname="tx_verowaapiconnector_domain_model_event.file_filetype">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.file_filetype" resname="tx_verowaimportapi_domain_model_event.file_filetype">
 				<source>File Filetype</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.image_url" resname="tx_verowaapiconnector_domain_model_event.image_url">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.image_url" resname="tx_verowaimportapi_domain_model_event.image_url">
 				<source>Image Url</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.image_width" resname="tx_verowaapiconnector_domain_model_event.image_width">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.image_width" resname="tx_verowaimportapi_domain_model_event.image_width">
 				<source>Image Width</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.image_height" resname="tx_verowaapiconnector_domain_model_event.image_height">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.image_height" resname="tx_verowaimportapi_domain_model_event.image_height">
 				<source>Image Height</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.event_type" resname="tx_verowaapiconnector_domain_model_event.event_type">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.event_type" resname="tx_verowaimportapi_domain_model_event.event_type">
 				<source>Event Type</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.event_state" resname="tx_verowaapiconnector_domain_model_event.event_state">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.event_state" resname="tx_verowaimportapi_domain_model_event.event_state">
 				<source>Event State</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.subscriptions" resname="tx_verowaapiconnector_domain_model_event.subscriptions">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.subscriptions" resname="tx_verowaimportapi_domain_model_event.subscriptions">
 				<source>Subscriptions</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.room_id" resname="tx_verowaapiconnector_domain_model_event.room_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.room_id" resname="tx_verowaimportapi_domain_model_event.room_id">
 				<source>Room Id</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.room_name" resname="tx_verowaapiconnector_domain_model_event.room_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.room_name" resname="tx_verowaimportapi_domain_model_event.room_name">
 				<source>Room Name</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.room_public_name" resname="tx_verowaapiconnector_domain_model_event.room_public_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.room_public_name" resname="tx_verowaimportapi_domain_model_event.room_public_name">
 				<source>Room Public Name</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.room_location_name" resname="tx_verowaapiconnector_domain_model_event.room_location_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.room_location_name" resname="tx_verowaimportapi_domain_model_event.room_location_name">
 				<source>Room Location Name</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.room_location_url" resname="tx_verowaapiconnector_domain_model_event.room_location_url">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.room_location_url" resname="tx_verowaimportapi_domain_model_event.room_location_url">
 				<source>Room Location Url</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.room_location_url_is_external" resname="tx_verowaapiconnector_domain_model_event.room_location_url_is_external">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.room_location_url_is_external" resname="tx_verowaimportapi_domain_model_event.room_location_url_is_external">
 				<source>Room Location Url Is External</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_organizer" resname="tx_verowaapiconnector_domain_model_organizer">
+			<trans-unit id="tx_verowaimportapi_domain_model_organizer" resname="tx_verowaimportapi_domain_model_organizer">
 				<source>Organizer</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_organizer.organizer_id" resname="tx_verowaapiconnector_domain_model_organizer.organizer_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_organizer.organizer_id" resname="tx_verowaimportapi_domain_model_organizer.organizer_id">
 				<source>Organizer Id</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_organizer.organizer_name" resname="tx_verowaapiconnector_domain_model_organizer.organizer_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_organizer.organizer_name" resname="tx_verowaimportapi_domain_model_organizer.organizer_name">
 				<source>Organizer Name</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_organizer.organizer_phone" resname="tx_verowaapiconnector_domain_model_organizer.organizer_phone">
+			<trans-unit id="tx_verowaimportapi_domain_model_organizer.organizer_phone" resname="tx_verowaimportapi_domain_model_organizer.organizer_phone">
 				<source>Organizer Phone</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_organizer.organizer_profession" resname="tx_verowaapiconnector_domain_model_organizer.organizer_profession">
+			<trans-unit id="tx_verowaimportapi_domain_model_organizer.organizer_profession" resname="tx_verowaimportapi_domain_model_organizer.organizer_profession">
 				<source>Organizer Profession</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_organizer.organizer_email" resname="tx_verowaapiconnector_domain_model_organizer.organizer_email">
+			<trans-unit id="tx_verowaimportapi_domain_model_organizer.organizer_email" resname="tx_verowaimportapi_domain_model_organizer.organizer_email">
 				<source>Organizer Email</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person" resname="tx_verowaapiconnector_domain_model_person">
+			<trans-unit id="tx_verowaimportapi_domain_model_person" resname="tx_verowaimportapi_domain_model_person">
 				<source>Person</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person.person_id" resname="tx_verowaapiconnector_domain_model_person.person_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_person.person_id" resname="tx_verowaimportapi_domain_model_person.person_id">
 				<source>Person Id</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person.name" resname="tx_verowaapiconnector_domain_model_person.name">
+			<trans-unit id="tx_verowaimportapi_domain_model_person.name" resname="tx_verowaimportapi_domain_model_person.name">
 				<source>Person Name</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person.firstname" resname="tx_verowaapiconnector_domain_model_person.firstname">
+			<trans-unit id="tx_verowaimportapi_domain_model_person.firstname" resname="tx_verowaimportapi_domain_model_person.firstname">
 				<source>Person Firstname</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person.lastname" resname="tx_verowaapiconnector_domain_model_person.lastname">
+			<trans-unit id="tx_verowaimportapi_domain_model_person.lastname" resname="tx_verowaimportapi_domain_model_person.lastname">
 				<source>Person Lastname</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person.phone" resname="tx_verowaapiconnector_domain_model_person.phone">
+			<trans-unit id="tx_verowaimportapi_domain_model_person.phone" resname="tx_verowaimportapi_domain_model_person.phone">
 				<source>Person Phone</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person.profession" resname="tx_verowaapiconnector_domain_model_person.profession">
+			<trans-unit id="tx_verowaimportapi_domain_model_person.profession" resname="tx_verowaimportapi_domain_model_person.profession">
 				<source>Person Profession</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person.email" resname="tx_verowaapiconnector_domain_model_person.email">
+			<trans-unit id="tx_verowaimportapi_domain_model_person.email" resname="tx_verowaimportapi_domain_model_person.email">
 				<source>Person Email</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person.events" resname="tx_verowaapiconnector_domain_model_person.events">
+			<trans-unit id="tx_verowaimportapi_domain_model_person.events" resname="tx_verowaimportapi_domain_model_person.events">
 				<source>Events</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room" resname="tx_verowaapiconnector_domain_model_room">
+			<trans-unit id="tx_verowaimportapi_domain_model_room" resname="tx_verowaimportapi_domain_model_room">
 				<source>Room</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.location_name" resname="tx_verowaapiconnector_domain_model_room.location_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.location_name" resname="tx_verowaimportapi_domain_model_room.location_name">
 				<source>Location Name</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.location_id" resname="tx_verowaapiconnector_domain_model_room.location_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.location_id" resname="tx_verowaimportapi_domain_model_room.location_id">
 				<source>Location ID</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.street" resname="tx_verowaapiconnector_domain_model_room.street">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.street" resname="tx_verowaimportapi_domain_model_room.street">
 				<source>Street</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.postcode" resname="tx_verowaapiconnector_domain_model_room.postcode">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.postcode" resname="tx_verowaimportapi_domain_model_room.postcode">
 				<source>Postcode</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.city" resname="tx_verowaapiconnector_domain_model_room.city">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.city" resname="tx_verowaimportapi_domain_model_room.city">
 				<source>City</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.location_url_is_external" resname="tx_verowaapiconnector_domain_model_room.location_url_is_external">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.location_url_is_external" resname="tx_verowaimportapi_domain_model_room.location_url_is_external">
 				<source>Location Url Is External</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.room_name" resname="tx_verowaapiconnector_domain_model_room.room_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.room_name" resname="tx_verowaimportapi_domain_model_room.room_name">
 				<source>Room Name</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.room_id" resname="tx_verowaapiconnector_domain_model_room.room_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.room_id" resname="tx_verowaimportapi_domain_model_room.room_id">
 				<source>Room Id</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.shortcut" resname="tx_verowaapiconnector_domain_model_room.shortcut">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.shortcut" resname="tx_verowaimportapi_domain_model_room.shortcut">
 				<source>Room Shortcut</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.location_url" resname="tx_verowaapiconnector_domain_model_room.location_url">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.location_url" resname="tx_verowaimportapi_domain_model_room.location_url">
 				<source>Location Url</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.order" resname="tx_verowaapiconnector_domain_model_room.order">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.order" resname="tx_verowaimportapi_domain_model_room.order">
 				<source>Location Order</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.events" resname="tx_verowaapiconnector_domain_model_room.events">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.events" resname="tx_verowaimportapi_domain_model_room.events">
 				<source>Events</source>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.room_public_name" resname="tx_verowaapiconnector_domain_model_room.room_public_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.room_public_name" resname="tx_verowaimportapi_domain_model_room.room_public_name">
 				<source>Room Public Name</source>
 			</trans-unit>
-			<trans-unit id="tx_verowa_apiconnector_eventlist.name" resname="tx_verowa_apiconnector_eventlist.name">
+			<trans-unit id="tx_verowa_importapi_eventlist.name" resname="tx_verowa_importapi_eventlist.name">
 				<source>Verowa Event List</source>
 			</trans-unit>
-			<trans-unit id="tx_verowa_apiconnector_eventlist.description" resname="tx_verowa_apiconnector_eventlist.description">
+			<trans-unit id="tx_verowa_importapi_eventlist.description" resname="tx_verowa_importapi_eventlist.description">
 				<source></source>
 			</trans-unit>
-			<trans-unit id="tx_verowa_apiconnector_eventdetails.name" resname="tx_verowa_apiconnector_eventdetails.name">
+			<trans-unit id="tx_verowa_importapi_eventdetails.name" resname="tx_verowa_importapi_eventdetails.name">
 				<source>Verowa Event Details</source>
 			</trans-unit>
-			<trans-unit id="tx_verowa_apiconnector_eventdetails.description" resname="tx_verowa_apiconnector_eventdetails.description">
+			<trans-unit id="tx_verowa_importapi_eventdetails.description" resname="tx_verowa_importapi_eventdetails.description">
 				<source></source>
 			</trans-unit>
 		</body>
