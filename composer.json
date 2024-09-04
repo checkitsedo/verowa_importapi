@@ -31,20 +31,9 @@
     "replace": {
         "typo3-ter/verowa-apiconnector": "self.version"
     },
-    "config": {
-        "vendor-dir": "vendor",
-        "bin-dir": "vendor/bin"
-    },
     "scripts": {
         "post-autoload-dump": [
             "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
         ]
     },
-    "extra": {
-        "typo3/cms": {
-            "cms-package-dir": "{$vendor-dir}/typo3/cms",
-            "web-dir": "public",
-            "extension-key": "verowa_apiconnector"
-        }
-    }
 }
