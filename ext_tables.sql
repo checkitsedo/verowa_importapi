@@ -1,7 +1,7 @@
 #
-# Table structure for table 'tx_verowaapiconnector_domain_model_event'
+# Table structure for table 'tx_verowaimportapi_domain_model_event'
 #
-CREATE TABLE tx_verowaapiconnector_domain_model_event (
+CREATE TABLE tx_verowaimportapi_domain_model_event (
 	event_id int(11) unsigned NOT NULL,
 	date_from int(11) unsigned NOT NULL,
 	date_to int(11) unsigned NOT NULL,
@@ -80,9 +80,9 @@ CREATE TABLE tx_verowaapiconnector_domain_model_event (
 );
 
 #
-# Table structure for table 'tx_verowaapiconnector_domain_model_person'
+# Table structure for table 'tx_verowaimportapi_domain_model_person'
 #
-CREATE TABLE tx_verowaapiconnector_domain_model_person (
+CREATE TABLE tx_verowaimportapi_domain_model_person (
 	person_id int(11) unsigned NOT NULL,
 	name varchar(255) NOT NULL DEFAULT '',
 	firstname varchar(255) NOT NULL DEFAULT '',
@@ -98,9 +98,9 @@ CREATE TABLE tx_verowaapiconnector_domain_model_person (
 );
 
 #
-# Table structure for table 'tx_verowaapiconnector_domain_model_targetgroup'
+# Table structure for table 'tx_verowaimportapi_domain_model_targetgroup'
 #
-CREATE TABLE tx_verowaapiconnector_domain_model_targetgroup (
+CREATE TABLE tx_verowaimportapi_domain_model_targetgroup (
 	group_id int(11) unsigned NOT NULL,
 	name varchar(255) NOT NULL DEFAULT '',
 	longname mediumtext,
@@ -108,9 +108,9 @@ CREATE TABLE tx_verowaapiconnector_domain_model_targetgroup (
 );
 
 #
-# Table structure for table 'tx_verowaapiconnector_domain_model_layer'
+# Table structure for table 'tx_verowaimportapi_domain_model_layer'
 #
-CREATE TABLE tx_verowaapiconnector_domain_model_layer (
+CREATE TABLE tx_verowaimportapi_domain_model_layer (
 	layer_id int(11) unsigned NOT NULL,
 	layer_name varchar(255) NOT NULL DEFAULT '',
 	parent_id int(11) unsigned NOT NULL,
@@ -120,9 +120,9 @@ CREATE TABLE tx_verowaapiconnector_domain_model_layer (
 );
 
 #
-# Table structure for table 'tx_verowaapiconnector_domain_model_room'
+# Table structure for table 'tx_verowaimportapi_domain_model_room'
 #
-CREATE TABLE tx_verowaapiconnector_domain_model_room (
+CREATE TABLE tx_verowaimportapi_domain_model_room (
 	location_name varchar(255) NOT NULL DEFAULT '',
 	location_id int(11) unsigned COMMENT '1:n => location.id',
 	street varchar(255) NOT NULL DEFAULT '',
@@ -140,9 +140,9 @@ CREATE TABLE tx_verowaapiconnector_domain_model_room (
 );
 
 #
-# Table structure for table 'tx_verowaapiconnector_event_person_mm'
+# Table structure for table 'tx_verowaimportapi_event_person_mm'
 #
-CREATE TABLE tx_verowaapiconnector_event_person_mm (
+CREATE TABLE tx_verowaimportapi_event_person_mm (
     uid_local int(11) unsigned DEFAULT 0 NOT NULL COMMENT 'tx_verowaconnector_domain_model_event.uid',
     uid_foreign int(11) unsigned DEFAULT 0 NOT NULL COMMENT 'tx_verowaconnector_domain_model_person.uid',
     sorting int(11) DEFAULT '0' NOT NULL,
@@ -154,9 +154,9 @@ CREATE TABLE tx_verowaapiconnector_event_person_mm (
 );
 
 #
-# Table structure for table 'tx_verowaapiconnector_event_targetgroup_mm'
+# Table structure for table 'tx_verowaimportapi_event_targetgroup_mm'
 #
-CREATE TABLE tx_verowaapiconnector_event_targetgroup_mm (
+CREATE TABLE tx_verowaimportapi_event_targetgroup_mm (
     uid_local int(11) unsigned DEFAULT 0 NOT NULL COMMENT 'tx_verowaconnector_domain_model_event.uid',
     uid_foreign int(11) unsigned DEFAULT 0 NOT NULL COMMENT 'tx_verowaconnector_domain_model_targetgroup.uid',
     sorting int(11) DEFAULT '0' NOT NULL,
@@ -167,9 +167,9 @@ CREATE TABLE tx_verowaapiconnector_event_targetgroup_mm (
 );
 
 #
-# Table structure for table 'tx_verowaapiconnector_event_layer_mm'
+# Table structure for table 'tx_verowaimportapi_event_layer_mm'
 #
-CREATE TABLE tx_verowaapiconnector_event_layer_mm (
+CREATE TABLE tx_verowaimportapi_event_layer_mm (
     uid_local int(11) unsigned DEFAULT 0 NOT NULL COMMENT 'tx_verowaconnector_domain_model_event.uid',
     uid_foreign int(11) unsigned DEFAULT 0 NOT NULL COMMENT 'tx_verowaconnector_domain_model_layer.uid',
     sorting int(11) DEFAULT '0' NOT NULL,
@@ -180,9 +180,9 @@ CREATE TABLE tx_verowaapiconnector_event_layer_mm (
 );
 
 #
-# Table structure for table 'tx_verowaapiconnector_event_room_mm'
+# Table structure for table 'tx_verowaimportapi_event_room_mm'
 #
-CREATE TABLE tx_verowaapiconnector_event_room_mm (
+CREATE TABLE tx_verowaimportapi_event_room_mm (
     uid_local int(11) unsigned DEFAULT 0 NOT NULL COMMENT 'tx_verowaconnector_domain_model_event.uid',
     uid_foreign int(11) unsigned DEFAULT 0 NOT NULL COMMENT 'tx_verowaconnector_domain_model_room.uid',
     sorting int(11) DEFAULT '0' NOT NULL,
