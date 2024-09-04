@@ -1,5 +1,5 @@
 {
-    "name": "checkit/verowa-apiconnector",
+    "name": "checkit/verowa_apiconnector",
     "type": "typo3-cms-extension",
     "description": "This extension connects to the Verowa API. To use it in your Typo3 project, you need a Verowa instance and an API key.\n\nVerowa is a Swiss organization tool for parishes. Verowa connects your team, manages your rooms and equipment, helps you plan events like church services or meetings and organizes your advertising, service weeks and much more. Verowa informs you about changes and keeps your website up to date with this plugin.\n\nTranslated with www.DeepL.com\\\\\\/Translator (free version)",
     "authors": [
@@ -10,21 +10,18 @@
     ],
     "license": "GPL-2.0-or-later",
     "require": {
-        "typo3/cms-core": "^10.4 || ^12.4",
-        "cobweb/external_import": "^6.3 || ^7.2",
-        "cobweb/svconnector_json": "^3.0 || ^4.2"
+        "typo3/cms-core": "^12.4",
+        "cobweb/external_import": "^7.2",
+        "cobweb/svconnector_json": "^4.2"
     },
     "autoload": {
         "psr-4": {
             "Checkit\\VerowaApiconnector\\": "Classes/"
         }
     },
-    "replace": {
-        "typo3-ter/verowa-apiconnector": "self.version"
-    },
     "extra": {
-		"typo3/cms": {
-			"extension-key": "verowa_apiconnector"
-		}
+	"typo3/cms": {
+		"extension-key": "verowa_apiconnector"
 	}
+    }
 }
