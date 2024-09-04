@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:verowa_apiconnector/Resources/Private/Language/locallang" date="2021-08-08T23:07:21Z" product-name="verowa_apiconnector">
+	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:verowa_importapi/Resources/Private/Language/locallang" date="2021-08-08T23:07:21Z" product-name="verowa_importapi">
 		<header/>
 		<body>
 			<trans-unit id="plugin.title" resname="plugin.title">
@@ -51,149 +51,149 @@
 			<trans-unit id="plugin.singlerecord.description" resname="plugin.singlerecord.description">
 				<target>Dieser Datensatz wird angezeigt, wenn das Plugin im Frontend ohne weitere Parameter aufgerufen wird. Wenn ein Ereignis als Get-Parameter vom Listen-Plugin gesetzt wird, überschreibt es Ihre Auswahl.</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event" resname="tx_verowaapiconnector_domain_model_event">
+			<trans-unit id="tx_verowaimportapi_domain_model_event" resname="tx_verowaimportapi_domain_model_event">
 				<target>Event</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.event_id" resname="tx_verowaapiconnector_domain_model_event.event_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.event_id" resname="tx_verowaimportapi_domain_model_event.event_id">
 				<target>Event-ID</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.date_from" resname="tx_verowaapiconnector_domain_model_event.date_from">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.date_from" resname="tx_verowaimportapi_domain_model_event.date_from">
 				<target>Datum von</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.date_to" resname="tx_verowaapiconnector_domain_model_event.date_to">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.date_to" resname="tx_verowaimportapi_domain_model_event.date_to">
 				<target>Datum bis</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.date_text" resname="tx_verowaapiconnector_domain_model_event.date_text">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.date_text" resname="tx_verowaimportapi_domain_model_event.date_text">
 				<target>Datums-Text</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.hide_time" resname="tx_verowaapiconnector_domain_model_event.hide_time">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.hide_time" resname="tx_verowaimportapi_domain_model_event.hide_time">
 				<target>Zeit ausblenden</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.title" resname="tx_verowaapiconnector_domain_model_event.title">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.title" resname="tx_verowaimportapi_domain_model_event.title">
 				<target>Titel</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.topic" resname="tx_verowaapiconnector_domain_model_event.topic">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.topic" resname="tx_verowaimportapi_domain_model_event.topic">
 				<target>Topic</target>
 			</trans-unit>			
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.short_desc" resname="tx_verowaapiconnector_domain_model_event.short_desc">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.short_desc" resname="tx_verowaimportapi_domain_model_event.short_desc">
 				<target>Kurzbeschreibung</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.long_desc" resname="tx_verowaapiconnector_domain_model_event.long_desc">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.long_desc" resname="tx_verowaimportapi_domain_model_event.long_desc">
 				<target>Lange Beschreibung</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.organizer" resname="tx_verowaapiconnector_domain_model_event.organizer">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.organizer" resname="tx_verowaimportapi_domain_model_event.organizer">
 				<target>Veranstalter</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.coorganizers" resname="tx_verowaapiconnector_domain_model_event.coorganizers">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.coorganizers" resname="tx_verowaimportapi_domain_model_event.coorganizers">
 				<target>Co-Veranstalter</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.childcare_id" resname="tx_verowaapiconnector_domain_model_event.childcare_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.childcare_id" resname="tx_verowaimportapi_domain_model_event.childcare_id">
 				<target>Kinderbetreuung-ID</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.subs_date" resname="tx_verowaapiconnector_domain_model_event.subs_date">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.subs_date" resname="tx_verowaimportapi_domain_model_event.subs_date">
 				<target>Anmelden Datum</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.subs_text" resname="tx_verowaapiconnector_domain_model_event.subs_text">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.subs_text" resname="tx_verowaimportapi_domain_model_event.subs_text">
 				<target>Anmelden Text</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.subs_person_id" resname="tx_verowaapiconnector_domain_model_event.subs_person_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.subs_person_id" resname="tx_verowaimportapi_domain_model_event.subs_person_id">
 				<target>Anmelden Personen-ID</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.baptism_offer_id" resname="tx_verowaapiconnector_domain_model_event.baptism_offer_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.baptism_offer_id" resname="tx_verowaimportapi_domain_model_event.baptism_offer_id">
 				<target>Taufe Angebots-ID</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.baptism_offer_text" resname="tx_verowaapiconnector_domain_model_event.baptism_offer_text">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.baptism_offer_text" resname="tx_verowaimportapi_domain_model_event.baptism_offer_text">
 				<target>Taufe Angebots-Text</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.target_groups" resname="tx_verowaapiconnector_domain_model_event.target_groups">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.target_groups" resname="tx_verowaimportapi_domain_model_event.target_groups">
 				<target>Zielgruppen</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.layers" resname="tx_verowaapiconnector_domain_model_event.layers">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.layers" resname="tx_verowaimportapi_domain_model_event.layers">
 				<target>Event-Layers</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.rooms" resname="tx_verowaconnector_domain_model_event.rooms">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.rooms" resname="tx_verowaimportapi_domain_model_event.rooms">
 				<target>Räume</target>
 			</trans-unit>			
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.image_url" resname="tx_verowaapiconnector_domain_model_event.image_url">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.image_url" resname="tx_verowaimportapi_domain_model_event.image_url">
 				<target>Bild Url</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.image_width" resname="tx_verowaapiconnector_domain_model_event.image_width">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.image_width" resname="tx_verowaimportapi_domain_model_event.image_width">
 				<target>Bild Breite</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.image_height" resname="tx_verowaapiconnector_domain_model_event.image_height">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.image_height" resname="tx_verowaimportapi_domain_model_event.image_height">
 				<target>Bild Höhe</target>
 			</trans-unit>
 			
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.room_id" resname="tx_verowaapiconnector_domain_model_event.room_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.room_id" resname="tx_verowaimportapi_domain_model_event.room_id">
 				<target>Raum-ID</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.room_name" resname="tx_verowaapiconnector_domain_model_event.room_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.room_name" resname="tx_verowaimportapi_domain_model_event.room_name">
 				<target>Raum Name</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.room_public_name" resname="tx_verowaapiconnector_domain_model_event.room_public_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.room_public_name" resname="tx_verowaimportapi_domain_model_event.room_public_name">
 				<target>Raum Öffentlicher Name</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.room_location_name" resname="tx_verowaapiconnector_domain_model_event.room_location_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.room_location_name" resname="tx_verowaimportapi_domain_model_event.room_location_name">
 				<target>Raum Standort Name</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.room_location_url" resname="tx_verowaapiconnector_domain_model_event.room_location_url">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.room_location_url" resname="tx_verowaimportapi_domain_model_event.room_location_url">
 				<target>Raum Standort Url</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_event.room_location_url_is_external" resname="tx_verowaapiconnector_domain_model_event.room_location_url_is_external">
+			<trans-unit id="tx_verowaimportapi_domain_model_event.room_location_url_is_external" resname="tx_verowaimportapi_domain_model_event.room_location_url_is_external">
 				<target>Raum Standort Url ist extern</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person" resname="tx_verowaapiconnector_domain_model_person">
+			<trans-unit id="tx_verowaimportapi_domain_model_person" resname="tx_verowaimportapi_domain_model_person">
 				<target>Veranstalter</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person.person_id" resname="tx_verowaapiconnector_domain_model_person.person_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_person.person_id" resname="tx_verowaimportapi_domain_model_person.person_id">
 				<target>Veranstalter-ID</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person.name" resname="tx_verowaapiconnector_domain_model_person.name">
+			<trans-unit id="tx_verowaimportapi_domain_model_person.name" resname="tx_verowaimportapi_domain_model_person.name">
 				<target>Veranstalter Name</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person.firstname" resname="tx_verowaapiconnector_domain_model_person.firstname">
+			<trans-unit id="tx_verowaimportapi_domain_model_person.firstname" resname="tx_verowaimportapi_domain_model_person.firstname">
 				<target>Veranstalter Vorname</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person.lastname" resname="tx_verowaapiconnector_domain_model_person.lastname">
+			<trans-unit id="tx_verowaimportapi_domain_model_person.lastname" resname="tx_verowaimportapi_domain_model_person.lastname">
 				<target>Veranstalter Nachname</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person.phone" resname="tx_verowaapiconnector_domain_model_person.phone">
+			<trans-unit id="tx_verowaimportapi_domain_model_person.phone" resname="tx_verowaimportapi_domain_model_person.phone">
 				<target>Veranstalter Telefon</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person.profession" resname="tx_verowaapiconnector_domain_model_person.profession">
+			<trans-unit id="tx_verowaimportapi_domain_model_person.profession" resname="tx_verowaimportapi_domain_model_person.profession">
 				<target>Veranstalter Beruf</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_person.email" resname="tx_verowaapiconnector_domain_model_person.email">
+			<trans-unit id="tx_verowaimportapi_domain_model_person.email" resname="tx_verowaimportapi_domain_model_person.email">
 				<target>Veranstalter Email</target>
 			</trans-unit>
-                    <trans-unit id="tx_verowaapiconnector_domain_model_layer" resname="tx_verowaapiconnector_domain_model_layer">
-				<target>Layer</target>
+				<trans-unit id="tx_verowaimportapi_domain_model_layer" resname="tx_verowaimportapi_domain_model_layer">
+			<target>Layer</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_layer.layer_id" resname="tx_verowaapiconnector_domain_model_layer.layer_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_layer.layer_id" resname="tx_verowaimportapi_domain_model_layer.layer_id">
 				<target>Layer-ID</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_layer.layer_name" resname="tx_verowaapiconnector_domain_model_layer.layer_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_layer.layer_name" resname="tx_verowaimportapi_domain_model_layer.layer_name">
 				<target>Layer Name</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room" resname="tx_verowaapiconnector_domain_model_room">
+			<trans-unit id="tx_verowaimportapi_domain_model_room" resname="tx_verowaimportapi_domain_model_room">
 				<target>Raum</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.room_id" resname="tx_verowaapiconnector_domain_model_room.room_id">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.room_id" resname="tx_verowaimportapi_domain_model_room.room_id">
 				<target>Raum-ID</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.room_name" resname="tx_verowaapiconnector_domain_model_room.room_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.room_name" resname="tx_verowaimportapi_domain_model_room.room_name">
 				<target>Raum Name</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.room_public_name" resname="tx_verowaapiconnector_domain_model_room.room_public_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.room_public_name" resname="tx_verowaimportapi_domain_model_room.room_public_name">
 				<target>Raum Öffentlicher Name</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.location_name" resname="tx_verowaapiconnector_domain_model_room.location_name">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.location_name" resname="tx_verowaimportapi_domain_model_room.location_name">
 				<target>Raum Standort Name</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.location_url" resname="tx_verowaapiconnector_domain_model_room.location_url">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.location_url" resname="tx_verowaimportapi_domain_model_room.location_url">
 				<target>Raum Standort Url</target>
 			</trans-unit>
-			<trans-unit id="tx_verowaapiconnector_domain_model_room.location_url_is_external" resname="tx_verowaapiconnector_domain_model_room.location_url_is_external">
+			<trans-unit id="tx_verowaimportapi_domain_model_room.location_url_is_external" resname="tx_verowaimportapi_domain_model_room.location_url_is_external">
 				<target>Raum Standort Url ist extern</target>
 			</trans-unit>
 		</body>
