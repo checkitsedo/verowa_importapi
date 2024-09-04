@@ -23,9 +23,9 @@ Verowa is a Swiss organization tool for parishes. Verowa connects your team, man
     'version' => '2.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.4.0-12.4.99',
-            'external_import' => '6.3.2-0.0.0',
-            'svconnector_json' => '3.0.0-0.0.0',
+            'typo3' => '12.4.0-12.4.99',
+            'external_import' => '7.2.0-7.9.99',
+            'svconnector_json' => '4.2.0-4.9.99',
         ],
         'conflicts' => [],
         'suggests' => [],
