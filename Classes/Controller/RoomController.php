@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Checkit\VerowaApiconnector\Controller;
+namespace Checkit\VerowaImportapi\Controller;
 
 
 /**
@@ -23,14 +23,14 @@ class RoomController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * roomRepository
      *
-     * @var \Checkit\VerowaApiconnector\Domain\Repository\RoomRepository
+     * @var \Checkit\VerowaImportapi\Domain\Repository\RoomRepository
      */
     protected $roomRepository = null;
 
     /**
-     * @param \Checkit\VerowaApiconnector\Domain\Repository\RoomRepository $roomRepository
+     * @param \Checkit\VerowaImportapi\Domain\Repository\RoomRepository $roomRepository
      */
-    public function injectRoomRepository(\Checkit\VerowaApiconnector\Domain\Repository\RoomRepository $roomRepository)
+    public function injectRoomRepository(\Checkit\VerowaImportapi\Domain\Repository\RoomRepository $roomRepository)
     {
         $this->roomRepository = $roomRepository;
     }
