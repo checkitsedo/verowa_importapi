@@ -1,14 +1,14 @@
-plugin.tx_verowaapiconnector_eventlist {
+plugin.tx_verowaimportapi_eventlist {
     view {
-        # cat=plugin.tx_verowaapiconnector_eventlist/file; type=string; label=Path to template root (FE)
-        templateRootPath = EXT:verowa_apiconnector/Resources/Private/Templates/
-        # cat=plugin.tx_verowaapiconnector_eventlist/file; type=string; label=Path to template partials (FE)
-        partialRootPath = EXT:verowa_apiconnector/Resources/Private/Partials/
-        # cat=plugin.tx_verowaapiconnector_eventlist/file; type=string; label=Path to template layouts (FE)
-        layoutRootPath = EXT:verowa_apiconnector/Resources/Private/Layouts/
+        # cat=plugin.tx_verowaimportapi_eventlist/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:verowa_importapi/Resources/Private/Templates/
+        # cat=plugin.tx_verowaimportapi_eventlist/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:verowa_importapi/Resources/Private/Partials/
+        # cat=plugin.tx_verowaimportapi_eventlist/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:verowa_importapi/Resources/Private/Layouts/
     }
     persistence {
-        # cat=plugin.tx_verowaapiconnector_eventlist//a; type=string; label=Default storage PID
+        # cat=plugin.tx_verowaimportapi_eventlist//a; type=string; label=Default storage PID
         storagePid =
     }
 }
