@@ -30,10 +30,5 @@
     },
     "replace": {
         "typo3-ter/verowa-apiconnector": "self.version"
-    },
-    "scripts": {
-        "post-autoload-dump": [
-            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
-        ]
     }
 }
