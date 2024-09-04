@@ -13,7 +13,7 @@
         "typo3/cms-core": "^10.4 || ^12.4",
         "cobweb/external_import": "^6.3 || ^7.2",
         "cobweb/svconnector_json": "^3.0 || ^4.2"
-    }
+    },
     "autoload": {
         "psr-4": {
             "Checkit\\VerowaApiconnector\\": "Classes/"
