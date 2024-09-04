@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Checkit\VerowaApiconnector\Domain\Model;
+namespace Checkit\VerowaImportapi\Domain\Model;
 
 /*
  * This file is part of the "Verowa API Connector" Extension for TYPO3 CMS.
@@ -92,7 +92,7 @@ class Event extends AbstractEntity
     /**
      * organizer
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Person>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person>
      */
     protected $organizer = null;
 	
@@ -134,7 +134,7 @@ class Event extends AbstractEntity
     /**
      * coorganizers
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Person>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person>
      */
 
     /**
@@ -146,67 +146,67 @@ class Event extends AbstractEntity
     /**
      * service1
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Person>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person>
      */
 
     /**
      * service2
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Person>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person>
      */
 
     /**
      * service3
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Person>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person>
      */
 
     /**
      * service4
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Person>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person>
      */
 
     /**
      * service5
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Person>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person>
      */
 
     /**
      * service6
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Person>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person>
      */
 
     /**
      * service7
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Person>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person>
      */
 
     /**
      * service8
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Person>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person>
      */
 
     /**
      * lectors
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Person>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person>
      */
 
     /**
      * organists
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Person>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person>
      */
 
     /**
      * vergers
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Person>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person>
      */
 
     /**
@@ -240,7 +240,7 @@ class Event extends AbstractEntity
     /**
      * childcarePerson
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Person>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person>
      */
 
     /**
@@ -329,13 +329,13 @@ class Event extends AbstractEntity
     /**
      * targetGroups
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Targetgroup>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Targetgroup>
      */
 
     /**
      * layers
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Layer>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Layer>
      */
     protected $layers = null;
 
@@ -349,7 +349,7 @@ class Event extends AbstractEntity
     /**
      * rooms
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkitsedo\VerowaConnector\Domain\Model\Room>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Room>
      */
     protected $rooms = null;
 	
@@ -658,10 +658,10 @@ class Event extends AbstractEntity
     /**
      * Adds a Organizer
      *
-     * @param \Checkit\VerowaApiconnector\Domain\Model\Person $person
+     * @param \Checkit\VerowaImportapi\Domain\Model\Person $person
      * @return void
      */
-    public function addOrganizer(\Checkit\VerowaApiconnector\Domain\Model\Person $person)
+    public function addOrganizer(\Checkit\VerowaImportapi\Domain\Model\Person $person)
     {
         $this->organizer->attach($person);
     }
@@ -669,10 +669,10 @@ class Event extends AbstractEntity
     /**
      * Removes a Organizer
      *
-     * @param \Checkit\VerowaApiconnector\Domain\Model\Person $personToRemove The Organizer to be removed
+     * @param \Checkit\VerowaImportapi\Domain\Model\Person $personToRemove The Organizer to be removed
      * @return void
      */
-    public function removeOrganizer(\Checkit\VerowaApiconnector\Domain\Model\Person $personToRemove)
+    public function removeOrganizer(\Checkit\VerowaImportapi\Domain\Model\Person $personToRemove)
     {
         $this->organizer->detach($personToRemove);
     }
@@ -680,7 +680,7 @@ class Event extends AbstractEntity
     /**
      * Returns the organizer
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaApiconnector\Domain\Model\Person> $person
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person> $person
      */
     public function getOrganizer()
     {
@@ -690,7 +690,7 @@ class Event extends AbstractEntity
     /**
      * Sets the organizer
      *
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaApiconnector\Domain\Model\Person> $person
+     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person> $person
      * @return void
      */
     public function setOrganizer(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $person)
@@ -806,27 +806,27 @@ class Event extends AbstractEntity
     /**
      * Adds a Coorganizer
      *
-     * @param \Checkit\VerowaApiconnector\Domain\Model\Person $person
+     * @param \Checkit\VerowaImportapi\Domain\Model\Person $person
      * @return void
      */
 
     /**
      * Removes a Coorganizer
      *
-     * @param \Checkit\VerowaApiconnector\Domain\Model\Person $personToRemove The Organizer to be removed
+     * @param \Checkit\VerowaImportapi\Domain\Model\Person $personToRemove The Organizer to be removed
      * @return void
      */
 
     /**
      * Returns the coorganizer
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaApiconnector\Domain\Model\Person> $person
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person> $person
      */
  
     /**
      * Sets the coorganizer
      *
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaApiconnector\Domain\Model\Person> $person
+     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person> $person
      * @return void
      */
 
@@ -1003,27 +1003,27 @@ class Event extends AbstractEntity
 	/**
      * Adds a childcarePerson
      *
-     * @param \Checkit\VerowaApiconnector\Domain\Model\Person $person
+     * @param \Checkit\VerowaImportapi\Domain\Model\Person $person
      * @return void
      */
 
     /**
      * Removes a childcarePerson
      *
-     * @param \Checkit\VerowaApiconnector\Domain\Model\Person $personToRemove The childcarePerson to be removed
+     * @param \Checkit\VerowaImportapi\Domain\Model\Person $personToRemove The childcarePerson to be removed
      * @return void
      */
 
     /**
      * Returns the childcarePerson
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaApiconnector\Domain\Model\Person> $person
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person> $person
      */
  
     /**
      * Sets the childcarePerson
      *
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaApiconnector\Domain\Model\Person> $person
+     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Person> $person
      * @return void
      */
 
@@ -1313,10 +1313,10 @@ class Event extends AbstractEntity
     /**
      * Adds a Layer
      *
-     * @param \Checkit\VerowaApiconnector\Domain\Model\Layer $layer
+     * @param \Checkit\VerowaImportapi\Domain\Model\Layer $layer
      * @return void
      */
-    public function addLayer(\Checkit\VerowaApiconnector\Domain\Model\Layer $layer)
+    public function addLayer(\Checkit\VerowaImportapi\Domain\Model\Layer $layer)
     {
         $this->layer->attach($layer);
     }
@@ -1324,10 +1324,10 @@ class Event extends AbstractEntity
     /**
      * Removes a Layer
      *
-     * @param \Checkit\VerowaApiconnector\Domain\Model\Layer $layerToRemove The Layer to be removed
+     * @param \Checkit\VerowaImportapi\Domain\Model\Layer $layerToRemove The Layer to be removed
      * @return void
      */
-    public function removeLayer(\Checkit\VerowaApiconnector\Domain\Model\Layer $layerToRemove)
+    public function removeLayer(\Checkit\VerowaImportapi\Domain\Model\Layer $layerToRemove)
     {
         $this->layer->detach($layerToRemove);
     }
@@ -1335,7 +1335,7 @@ class Event extends AbstractEntity
     /**
      * Returns the layer
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaApiconnector\Domain\Model\Layer> $layer
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Layer> $layer
      */
     public function getLayer()
     {
@@ -1345,7 +1345,7 @@ class Event extends AbstractEntity
     /**
      * Sets the layer
      *
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaApiconnector\Domain\Model\Layer> $layer
+     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Layer> $layer
      * @return void
      */
     public function setLayer(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $layer)
@@ -1356,7 +1356,7 @@ class Event extends AbstractEntity
     /**
      * Returns the layers
      *
-     * @return \Checkit\VerowaApiconnector\Domain\Model\Layer $layers
+     * @return \Checkit\VerowaImportapi\Domain\Model\Layer $layers
      */
     public function getLayers()
     {
@@ -1366,10 +1366,10 @@ class Event extends AbstractEntity
     /**
      * Sets the layers
      *
-     * @param \Checkit\VerowaApiconnector\Domain\Model\Layer $layers
+     * @param \Checkit\VerowaImportapi\Domain\Model\Layer $layers
      * @return void
      */
-    public function setLayers(\Checkit\VerowaApiconnector\Domain\Model\Layer $layers)
+    public function setLayers(\Checkit\VerowaImportapi\Domain\Model\Layer $layers)
     {
         $this->layers = $layers;
     }
@@ -1398,20 +1398,20 @@ class Event extends AbstractEntity
 	/**
      * Adds a Room
      *
-     * @param \Checkit\VerowaApiconnector\Domain\Model\Room $room
+     * @param \Checkit\VerowaImportapi\Domain\Model\Room $room
      * @return void
      */
-    public function addRoom(\Checkit\VerowaApiconnector\Domain\Model\Room $room)
+    public function addRoom(\Checkit\VerowaImportapi\Domain\Model\Room $room)
     {
         $this->room->attach($room);
     }
 
     /**
      * Removes a Room
-     * @param \Checkit\VerowaApiconnector\Domain\Model\Room $roomToRemove The Room to be removed
+     * @param \Checkit\VerowaImportapi\Domain\Model\Room $roomToRemove The Room to be removed
      * @return void
      */
-    public function removeRoom(\Checkit\VerowaApiconnector\Domain\Model\Room $roomToRemove)
+    public function removeRoom(\Checkit\VerowaImportapi\Domain\Model\Room $roomToRemove)
     {
         $this->room->detach($roomToRemove);
     }
@@ -1419,7 +1419,7 @@ class Event extends AbstractEntity
     /**
      * Returns the room
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaApiconnector\Domain\Model\Room> $room
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Room> $room
      */
     public function getRoom()
     {
@@ -1429,7 +1429,7 @@ class Event extends AbstractEntity
     /**
      * Sets the room
      *
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaApiconnector\Domain\Model\Room> $room
+     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Room> $room
      * @return void
      */
     public function setRoom(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $room)
@@ -1440,7 +1440,7 @@ class Event extends AbstractEntity
     /**
      * Returns the rooms
      *
-     * @return \Checkit\VerowaApiconnector\Domain\Model\Room $rooms
+     * @return \Checkit\VerowaImportapi\Domain\Model\Room $rooms
      */
     public function getRooms()
     {
@@ -1450,10 +1450,10 @@ class Event extends AbstractEntity
     /**
      * Sets the rooms
      *
-     * @param \Checkit\VerowaApiconnector\Domain\Model\Room $rooms
+     * @param \Checkit\VerowaImportapi\Domain\Model\Room $rooms
      * @return void
      */
-    public function setRooms(\Checkit\VerowaApiconnector\Domain\Model\Room $rooms)
+    public function setRooms(\Checkit\VerowaImportapi\Domain\Model\Room $rooms)
     {
         $this->rooms = $rooms;
     }
