@@ -1,0 +1,207 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+This template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Event:
+          List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+
+<f:if condition="{settings.limitrecords}">
+	<f:then>
+		<f:for each="{pagination.paginator.paginatedItems}" as="event" iteration="iterator">
+			<f:if condition="{iterator.cycle} < 7">
+				<f:render section="main" arguments="{event:event}" />
+			</f:if>
+		</f:for>
+	</f:then>
+	<f:else>
+		<f:for each="{pagination.paginator.paginatedItems}" as="event" iteration="iterator">
+			<f:render section="main" arguments="{event:event}" />
+		</f:for>
+		<f:render partial="Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator, actionName: 'list'}" />
+	</f:else>
+</f:if>
+
+</f:section>
+
+
+<f:section name="main">
+<div class="row">
+
+<article class="eventcard d-flex fl-left">
+	<section class="eventdate">
+		<div>
+			<time datetime="{event.dateFrom -> f:format.date(format: 'd.m.Y')}">
+				<span class="day">{event.dateFrom -> f:format.date(format: '%d')}</span>
+				<span class="month">{event.dateFrom -> f:format.date(format: '%B')}</span>
+			</time>
+		</div>
+		
+		<div class="event-controls">
+			<f:link.action action="show" pageUid="{settings.detailpage}" arguments="{event:event}" class="button btn btn-primary">
+                Details
+            </f:link.action>
+    </div>
+	</section>
+	
+	<section class="card-cont">
+		<f:if condition="{event.shortDesc}">
+			<f:then>
+				{event.shortDesc}
+			</f:then>
+			<f:else>
+				<small>&nbsp</small>
+			</f:else>
+		</f:if>
+		<h4 class="title-link">
+			{event.title}
+		</h4>
+		
+		<div class="even-date">
+			<!--<i class="fa fa-calendar"></i>-->
+			<time>
+				<!--<span>wednesday 28 december 2014</span>-->
+				<span>
+					<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clock" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"/>
+						<path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+					</svg>
+					
+					<f:if condition="{event.hideTime}">
+						<f:then>
+							{event.dateFrom -> f:format.date(format: '%d. %B %Y')}
+						</f:then>
+						<f:else>
+							<f:if condition="{event.dateFrom -> f:format.date(format: '%d. %B %Y')} == {event.dateTo -> f:format.date(format: '%d. %B %Y')}">
+								<f:then>
+									{event.dateFrom -> f:format.date(format: '%d. %B %Y')} | 
+								</f:then>
+								<f:else>
+									{event.dateFrom -> f:format.date(format: '%d. %B %Y')}
+								</f:else>
+							</f:if>							
+						</f:else>
+					</f:if>
+					
+					<f:if condition="{event.hideTime}">
+						<f:then></f:then>
+						<f:else>
+							<f:format.date format="H:i">{event.dateFrom}</f:format.date>
+						</f:else>
+					</f:if>
+					
+					<f:if condition="{event.dateFrom -> f:format.date(format: '%d. %B %Y')} == {event.dateTo -> f:format.date(format: '%d. %B %Y')}">
+						<f:then></f:then>
+						<f:else>
+							- {event.dateTo -> f:format.date(format: '%d. %B %Y')}
+						</f:else>
+					</f:if>
+					
+					<f:if condition="{index.allDay}">
+						<f:then>
+							<f:translate key="all_day" />
+						</f:then>
+						<f:else>
+							<f:if condition="{event.hideTime}">
+								<f:then></f:then>
+								<f:else>
+									<f:if condition="{event.dateFrom -> f:format.date(format: 'd.m.Y')} == {event.dateTo -> f:format.date(format: 'd.m.Y')}">
+										-
+									</f:if>
+									<f:format.date format="H:i">{event.dateTo}</f:format.date>
+								</f:else>
+							</f:if>
+						</f:else>
+					</f:if>
+					
+				</span>
+			</time>
+				
+		</div>
+		
+		<div class="even-location">
+			<!--<i class="fa fa-calendar"></i>-->
+			<time>
+				<!--<span>wednesday 28 december 2014</span>-->
+				<span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+						<path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+					</svg>
+					
+					<!--<f:if condition="{event.rooms}">
+						<f:then>
+							<f:for each="{event.rooms}" as="room">
+								<f:format.nl2br>{room.locationName}</f:format.nl2br>
+							</f:for>
+						</f:then>
+						<f:else>
+							<f:for each="{event.rooms}" as="room">
+								<f:format.crop maxCharacters="180" append="&nbsp;[...]">
+									<f:format.stripTags>{room.locationName}</f:format.stripTags>
+								</f:format.crop>
+							</f:for>
+						</f:else>
+					</f:if>-->
+					
+					<f:if condition="{event.rooms}">
+						<f:then>
+							<f:for each="{event.rooms}" as="room">
+								<f:if condition="{room.locationName}">
+									<f:format.crop maxCharacters="50" append="...">
+										<f:format.stripTags>{room.locationName}</f:format.stripTags>
+									</f:format.crop><br />
+								</f:if>
+							</f:for>
+						</f:then>
+						<f:else>
+							<f:if condition="{event.roomName}">
+								<f:then>
+									<f:format.crop maxCharacters="50" append="...">
+										<f:format.stripTags>{event.roomName}</f:format.stripTags>
+									</f:format.crop><br />
+								</f:then>
+								<f:else>
+									es wurde kein Raum definiert
+								</f:else>
+							</f:if>
+						</f:else>
+					</f:if>
+
+					
+				</span>
+			</time>
+				
+		</div>
+
+		<div class="even-info">
+			<!--<i class="fa fa-map-marker"></i>-->
+			<p id="even-info">
+				<!--<f:if condition="{event.shortDesc}">
+					<f:then>
+						<f:format.nl2br>{event.shortDesc}</f:format.nl2br>
+					</f:then>
+					<f:else>
+						<f:format.html>{event.longDesc}</f:format.html>
+					</f:else>
+				</f:if>-->
+			</p>
+		</div>
+					
+	</section>
+	
+</article>
+
+</div>
+
+</f:section>
+</html>
