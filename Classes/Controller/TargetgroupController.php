@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Checkit\VerowaApiconnector\Controller;
+namespace Checkit\VerowaImportapi\Controller;
 
 
 /**
@@ -23,14 +23,14 @@ class TargetgroupController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionCont
     /**
      * targetgroupRepository
      *
-     * @var \Checkit\VerowaApiconnector\Domain\Repository\TargetgroupRepository
+     * @var \Checkit\VerowaImportapi\Domain\Repository\TargetgroupRepository
      */
     protected $targetgroupRepository = null;
 
     /**
-     * @param \Checkit\VerowaApiconnector\Domain\Repository\TargetgroupRepository $targetgroupRepository
+     * @param \Checkit\VerowaImportapi\Domain\Repository\TargetgroupRepository $targetgroupRepository
      */
-    public function injectTargetgroupRepository(\Checkit\VerowaApiconnector\Domain\Repository\TargetgroupRepository $targetgroupRepository)
+    public function injectTargetgroupRepository(\Checkit\VerowaImportapi\Domain\Repository\TargetgroupRepository $targetgroupRepository)
     {
         $this->targetgroupRepository = $targetgroupRepository;
     }
