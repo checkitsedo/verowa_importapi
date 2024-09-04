@@ -1,7 +1,7 @@
 <?php
 return [
 	'ctrl' => [
-		'title' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_person',
+		'title' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_person',
 		'label' => 'person_id',
 		'label_alt' => 'name',
 		'label_userFunc' => \Checkit\VerowaImportapi\Userfuncs\Tca::class . '->personBeTitle',
@@ -19,7 +19,7 @@ return [
 			'endtime' => 'endtime',
 		],
 		'searchFields' => 'person_id,name,firstname,lastname,phone,profession,email',
-		'iconfile' => 'EXT:verowa_apiconnector/Resources/Public/Icons/tx_verowaimportapi_domain_model_person.gif'
+		'iconfile' => 'EXT:verowa_importapi/Resources/Public/Icons/tx_verowaimportapi_domain_model_person.gif'
 	],
 	'external' => [
 		'general' => [
@@ -129,7 +129,7 @@ return [
 		
 		'person_id' => [
 			'exclude' => true,
-			'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_person.person_id',
+			'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_person.person_id',
 			'config' => [
 				'type' => 'input',
 				'size' => 30,
@@ -144,7 +144,7 @@ return [
 		],
 		'name' => [
 			'exclude' => true,
-			'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_person.name',
+			'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_person.name',
 			'config' => [
 				'type' => 'input',
 				'size' => 30,
@@ -159,7 +159,7 @@ return [
 		],
 		'firstname' => [
 			'exclude' => true,
-			'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_person.firstname',
+			'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_person.firstname',
 			'config' => [
 				'type' => 'input',
 				'size' => 30,
@@ -174,7 +174,7 @@ return [
 		],
 		'lastname' => [
 			'exclude' => true,
-			'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_person.lastname',
+			'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_person.lastname',
 			'config' => [
 				'type' => 'input',
 				'size' => 30,
@@ -189,7 +189,7 @@ return [
 		],
 		'phone' => [
 			'exclude' => true,
-			'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_person.phone',
+			'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_person.phone',
 			'config' => [
 				'type' => 'input',
 				'size' => 30,
@@ -204,7 +204,7 @@ return [
 		],
 		'profession' => [
 			'exclude' => true,
-			'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_person.profession',
+			'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_person.profession',
 			'config' => [
 				'type' => 'input',
 				'size' => 30,
@@ -219,7 +219,7 @@ return [
 		],
 		'email' => [
 			'exclude' => true,
-			'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_person.email',
+			'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_person.email',
 			'config' => [
 				'type' => 'input',
 				'size' => 30,
