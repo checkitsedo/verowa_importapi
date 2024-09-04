@@ -1,0 +1,37 @@
+routeEnhancers:
+  EventList:
+    type: Extbase
+    extension: VerowaApiconnector
+    plugin: Eventlist
+    routes:
+      - routePath: '/seite-{currentPage}'
+        _controller: 'Event::list'
+        _arguments:
+          page: '@widget_0/currentPage'
+    aspects:
+      currentPage:
+        type: StaticRangeMapper
+        start: '1'
+        end: '1000'
+        
+  EventDetails:
+    type: Extbase
+    limitToPages:
+      # Event-Listenansicht - benötigt für die Pagination:
+      - 28
+      - 89
+      # Event-Detailansicht - benötigt für das allgemeine Routing:
+      - 73
+      - 90
+    extension: VerowaApiconnector
+    plugin: Eventdetails
+    routes:
+      - routePath: '/{event_id}'
+        _controller: 'Event::show'
+        _arguments:
+          event_id: 'event'
+    aspects:
+      event_id:
+        type: PersistedAliasMapper
+        tableName: 'tx_verowaapiconnector_domain_model_event'
+        routeFieldName: 'event_id'
