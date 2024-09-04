@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Checkit\VerowaApiconnector\Domain\Repository;
+namespace Checkit\VerowaImportapi\Domain\Repository;
 
 /**
  * This file is part of the "Verowa API Connector" Extension for TYPO3 CMS.
@@ -33,8 +33,8 @@ class EventRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
         $query->matching(
             $query->greaterThanOrEqual('date_from', time())
         );
-
-$query->setOrderings(['date_from' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING]);
+        
+        $query->setOrderings(['date_from' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING]);
 
         return $query->execute();
     }
@@ -49,10 +49,10 @@ $query->setOrderings(['date_from' => \TYPO3\CMS\Extbase\Persistence\QueryInterfa
     public function findWhereDateGreaterThen()
     {
         $query = $this->createQuery();
-	$date = new \DateTime('now');
+        $date = new \DateTime('now');
         $query->matching(
-		$query->greaterThanOrEqual('date_from', $date->format('Y-m-d H:i:s'))
-	);
+            $query->greaterThanOrEqual('date_from', $date->format('Y-m-d H:i:s'))
+        );
         $query->setOrderings(['date_from' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING]);
         return $query->execute();
     }
