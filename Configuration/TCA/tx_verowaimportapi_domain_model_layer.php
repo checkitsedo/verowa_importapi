@@ -1,10 +1,10 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_layer',
+        'title' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_layer',
         'label' => 'layer_id',
 		'label_alt' => 'layer_name',
-		'label_userFunc' => \Checkit\VerowaApiconnector\Userfuncs\Tca::class . '->layerBeTitle',
+		'label_userFunc' => \Checkit\VerowaImportapi\Userfuncs\Tca::class . '->layerBeTitle',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
@@ -19,7 +19,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'layer_id,layer_name',
-        'iconfile' => 'EXT:verowa_apiconnector/Resources/Public/Icons/tx_verowaapiconnector_domain_model_room.gif'
+        'iconfile' => 'EXT:verowa_importapi/Resources/Public/Icons/tx_verowaimportapi_domain_model_room.gif'
     ],
     'external' => [
 		'general' => [
@@ -73,8 +73,8 @@ return [
                 'items' => [
                     ['', 0],
                 ],
-                'foreign_table' => 'tx_verowaapiconnector_domain_model_layer',
-                'foreign_table_where' => 'AND {#tx_verowaapiconnector_domain_model_layer}.{#pid}=###CURRENT_PID### AND {#tx_verowaapiconnector_domain_model_layer}.{#sys_language_uid} IN (-1,0)',
+                'foreign_table' => 'tx_verowaimportapi_domain_model_layer',
+                'foreign_table_where' => 'AND {#tx_verowaimportapi_domain_model_layer}.{#pid}=###CURRENT_PID### AND {#tx_verowaimportapi_domain_model_layer}.{#sys_language_uid} IN (-1,0)',
             ],
         ],
         'l10n_diffsource' => [
@@ -129,7 +129,7 @@ return [
 
         'layer_name' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_layer.layer_name',
+            'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_layer.layer_name',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -144,7 +144,7 @@ return [
         ],
         'layer_id' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_layer.layer_id',
+            'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_layer.layer_id',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -159,12 +159,12 @@ return [
         ],
         'events' => [
             'exclude' => 0,
-			'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_layer.events',
+			'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_layer.events',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
-                'foreign_table' => 'tx_verowaapiconnector_domain_model_event',
-                'MM' => 'tx_verowaapiconnector_event_layer_mm',
+                'foreign_table' => 'tx_verowaimportapi_domain_model_event',
+                'MM' => 'tx_verowaimportapi_event_layer_mm',
                 'MM_opposite_field' => 'layers'
             ],
         ],
