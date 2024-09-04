@@ -1,10 +1,10 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_room',
+        'title' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_room',
         'label' => 'room_id',
 		'label_alt' => 'location_name,room_name',
-		'label_userFunc' => \Checkit\VerowaApiconnector\Userfuncs\Tca::class . '->roomBeTitle',
+		'label_userFunc' => \Checkit\VerowaImportapi\Userfuncs\Tca::class . '->roomBeTitle',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
@@ -19,7 +19,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'room_id,room_name,room_public_name,room_location_name,room_location_url',
-        'iconfile' => 'EXT:verowa_apiconnector/Resources/Public/Icons/tx_verowaapiconnector_domain_model_room.gif'
+        'iconfile' => 'EXT:verowa_importapi/Resources/Public/Icons/tx_verowaimportapi_domain_model_room.gif'
     ],
     'external' => [
 		'general' => [
@@ -73,8 +73,8 @@ return [
                 'items' => [
                     ['', 0],
                 ],
-                'foreign_table' => 'tx_verowaapiconnector_domain_model_room',
-                'foreign_table_where' => 'AND {#tx_verowaapiconnector_domain_model_room}.{#pid}=###CURRENT_PID### AND {#tx_verowaapiconnector_domain_model_room}.{#sys_language_uid} IN (-1,0)',
+                'foreign_table' => 'tx_verowaimportapi_domain_model_room',
+                'foreign_table_where' => 'AND {#tx_verowaimportapi_domain_model_room}.{#pid}=###CURRENT_PID### AND {#tx_verowaimportapi_domain_model_room}.{#sys_language_uid} IN (-1,0)',
             ],
         ],
         'l10n_diffsource' => [
@@ -129,7 +129,7 @@ return [
 
         'location_name' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_room.location_name',
+            'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_room.location_name',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -144,7 +144,7 @@ return [
         ],
         'location_id' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_room.location_id',
+            'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_room.location_id',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -159,7 +159,7 @@ return [
         ],
         'street' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_room.street',
+            'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_room.street',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -174,7 +174,7 @@ return [
         ],
         'postcode' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_room.postcode',
+            'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_room.postcode',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -189,7 +189,7 @@ return [
         ],
         'city' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_room.city',
+            'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_room.city',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -204,7 +204,7 @@ return [
         ],
         'location_url_is_external' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_room.location_url_is_external',
+            'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_room.location_url_is_external',
             'config' => [
                 'type' => 'check',
                 'renderType' => 'checkboxToggle',
@@ -224,7 +224,7 @@ return [
         ],
         'room_name' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_room.room_name',
+            'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_room.room_name',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -239,7 +239,7 @@ return [
         ],
         'room_id' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_room.room_id',
+            'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_room.room_id',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -254,7 +254,7 @@ return [
         ],
         'shortcut' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_room.shortcut',
+            'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_room.shortcut',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -269,7 +269,7 @@ return [
         ],
         'location_url' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_room.location_url',
+            'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_room.location_url',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -284,7 +284,7 @@ return [
         ],
 		'order' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_room.order',
+            'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_room.order',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -299,12 +299,12 @@ return [
         ],
         'events' => [
             'exclude' => 0,
-			'label' => 'LLL:EXT:verowa_apiconnector/Resources/Private/Language/locallang_db.xlf:tx_verowaapiconnector_domain_model_room.events',
+			'label' => 'LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowaimportapi_domain_model_room.events',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
-                'foreign_table' => 'tx_verowaapiconnector_domain_model_event',
-                'MM' => 'tx_verowaapiconnector_event_room_mm',
+                'foreign_table' => 'tx_verowaimportapi_domain_model_event',
+                'MM' => 'tx_verowaimportapi_event_room_mm',
                 'MM_opposite_field' => 'rooms'
             ],
         ],
