@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Checkit\VerowaApiconnector\ViewHelpers;
+namespace Checkit\VerowaImportapi\ViewHelpers;
 
 /**
  * AbstractViewHelper.
