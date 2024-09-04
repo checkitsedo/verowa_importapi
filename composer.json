@@ -17,6 +17,7 @@
     "require-dev": {
         "typo3/testing-framework": "^6.8"
     },
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Checkit\\VerowaApiconnector\\": "Classes"
