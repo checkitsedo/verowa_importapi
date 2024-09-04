@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Checkit\VerowaApiconnector\Domain\Model;
+namespace Checkit\VerowaImportapi\Domain\Model;
 
 
 /**
@@ -100,7 +100,7 @@ class Room extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 	/**
      * events
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaApiconnector\Domain\Model\Event>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Event>
      */
     protected $events = null;
 	
@@ -371,10 +371,10 @@ class Room extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 	/**
      * Adds a Event
      *
-     * @param \Checkit\VerowaApiconnector\Domain\Model\Event $event
+     * @param \Checkit\VerowaImportapi\Domain\Model\Event $event
      * @return void
      */
-    public function addEvent(\Checkit\VerowaApiconnector\Domain\Model\Event $event)
+    public function addEvent(\Checkit\VerowaImportapi\Domain\Model\Event $event)
     {
         $this->event->attach($event);
     }
@@ -382,10 +382,10 @@ class Room extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Removes a Event
      *
-     * @param \Checkit\VerowaApiconnector\Domain\Model\Event $eventToRemove The Event to be removed
+     * @param \Checkit\VerowaImportapi\Domain\Model\Event $eventToRemove The Event to be removed
      * @return void
      */
-    public function removeEvent(\Checkit\VerowaApiconnector\Domain\Model\Event $eventToRemove)
+    public function removeEvent(\Checkit\VerowaImportapi\Domain\Model\Event $eventToRemove)
     {
         $this->event->detach($eventToRemove);
     }
@@ -393,7 +393,7 @@ class Room extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the event
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaApiconnector\Domain\Model\Event> $event
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Event> $event
      */
     public function getEvent()
     {
@@ -403,7 +403,7 @@ class Room extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the event
      *
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaApiconnector\Domain\Model\Event> $event
+     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Checkit\VerowaImportapi\Domain\Model\Event> $event
      * @return void
      */
     public function setEvent(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $event)
@@ -414,7 +414,7 @@ class Room extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the events
      *
-     * @return \Checkit\VerowaApiconnector\Domain\Model\Event $events
+     * @return \Checkit\VerowaImportapi\Domain\Model\Event $events
      */
     public function getEvents()
     {
@@ -424,10 +424,10 @@ class Room extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the events
      *
-     * @param \Checkit\VerowaApiconnector\Domain\Model\Event $events
+     * @param \Checkit\VerowaImportapi\Domain\Model\Event $events
      * @return void
      */
-    public function setEvents(\Checkit\VerowaApiconnector\Domain\Model\Event $events)
+    public function setEvents(\Checkit\VerowaImportapi\Domain\Model\Event $events)
     {
         $this->events = $events;
     }
