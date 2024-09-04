@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Checkit\VerowaApiconnector\Controller;
+namespace Checkit\VerowaImportapi\Controller;
 
 
 /**
@@ -23,14 +23,14 @@ class LayerController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     /**
      * layerRepository
      *
-     * @var \Checkit\VerowaApiconnector\Domain\Repository\LayerRepository
+     * @var \Checkit\VerowaImportapi\Domain\Repository\LayerRepository
      */
     protected $layerRepository = null;
 
     /**
-     * @param \Checkit\VerowaApiconnector\Domain\Repository\LayerRepository $layerRepository
+     * @param \Checkit\VerowaImportapi\Domain\Repository\LayerRepository $layerRepository
      */
-    public function injectLayerRepository(\Checkit\VerowaApiconnector\Domain\Repository\LayerRepository $layerRepository)
+    public function injectLayerRepository(\Checkit\VerowaImportapi\Domain\Repository\LayerRepository $layerRepository)
     {
         $this->layerRepository = $layerRepository;
     }
