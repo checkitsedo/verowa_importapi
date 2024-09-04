@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Checkit\VerowaApiconnector\Controller;
+namespace Checkit\VerowaImportapi\Controller;
 
 
 /**
@@ -23,14 +23,14 @@ class PersonController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
     /**
      * personRepository
      *
-     * @var \Checkit\VerowaApiconnector\Domain\Repository\PersonRepository
+     * @var \Checkit\VerowaImportapi\Domain\Repository\PersonRepository
      */
     protected $personRepository = null;
 
     /**
-     * @param \Checkit\VerowaApiconnector\Domain\Repository\PersonRepository $personRepository
+     * @param \Checkit\VerowaImportapi\Domain\Repository\PersonRepository $personRepository
      */
-    public function injectPersonRepository(\Checkit\VerowaApiconnector\Domain\Repository\PersonRepository $personRepository)
+    public function injectPersonRepository(\Checkit\VerowaImportapi\Domain\Repository\PersonRepository $personRepository)
     {
         $this->personRepository = $personRepository;
     }
