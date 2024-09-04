@@ -18,7 +18,7 @@ Verowa is a Swiss organization tool for parishes. Verowa connects your team, man
     'category' => 'plugin',
     'author' => 'Dominik Senti',
     'author_email' => 'info@senti.lu',
-    'state' => 'beta',
+    'state' => 'stable',
     'clearCacheOnLoad' => 1,
     'version' => '2.0.0',
     'constraints' => [
