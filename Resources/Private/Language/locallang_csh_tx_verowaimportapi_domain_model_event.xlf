@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:verowa_importapi/Resources/Private/Language/locallang_csh" date="2021-08-08T23:07:21Z" product-name="verowa_importapi">
+		<header/>
+		<body>
+			<trans-unit id="event_id.description" resname="event_id.description">
+				<source>eventId</source>
+			</trans-unit>
+			<trans-unit id="date_from.description" resname="date_from.description">
+				<source>dateFrom</source>
+			</trans-unit>
+			<trans-unit id="date_to.description" resname="date_to.description">
+				<source>dateTo</source>
+			</trans-unit>
+			<trans-unit id="title.description" resname="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="hide_time.description" resname="hide_time.description">
+				<source>hideTime</source>
+			</trans-unit>
+			<trans-unit id="short_desc.description" resname="short_desc.description">
+				<source>shortDesc</source>
+			</trans-unit>
+			<trans-unit id="long_desc.description" resname="long_desc.description">
+				<source>longDesc</source>
+			</trans-unit>
+			<trans-unit id="childcare_id.description" resname="childcare_id.description">
+				<source>childcareId</source>
+			</trans-unit>
+			<trans-unit id="subscribe_date.description" resname="subscribe_date.description">
+				<source>subscribeDate</source>
+			</trans-unit>
+			<trans-unit id="subscribe_time.description" resname="subscribe_time.description">
+				<source>subscribeTime</source>
+			</trans-unit>
+			<trans-unit id="subscribe_person_id.description" resname="subscribe_person_id.description">
+				<source>subscribePersonId</source>
+			</trans-unit>
+			<trans-unit id="baptism_offer_id.description" resname="baptism_offer_id.description">
+				<source>baptismOfferId</source>
+			</trans-unit>
+			<trans-unit id="event_type.description" resname="event_type.description">
+				<source>eventType</source>
+			</trans-unit>
+			<trans-unit id="event_state.description" resname="event_state.description">
+				<source>eventState</source>
+			</trans-unit>
+			<trans-unit id="date_text.description" resname="date_text.description">
+				<source>dateText</source>
+			</trans-unit>
+			<trans-unit id="image_url.description" resname="image_url.description">
+				<source>imageUrl</source>
+			</trans-unit>
+			<trans-unit id="subscriptions.description" resname="subscriptions.description">
+				<source>subscriptions</source>
+			</trans-unit>
+			<trans-unit id="organizer.description" resname="organizer.description">
+				<source>organizer</source>
+			</trans-unit>
+			<trans-unit id="layers.description" resname="layers.description">
+				<source>layers</source>
+			</trans-unit>
+			<trans-unit id="layer_id.description" resname="layer_id.description">
+				<source>layerId</source>
+			</trans-unit>
+			<trans-unit id="layer_name.description" resname="layer_name.description">
+				<source>layerName</source>
+			</trans-unit>
+			<trans-unit id="rooms.description" resname="rooms.description">
+				<source>rooms</source>
+			</trans-unit>
+			<trans-unit id="room_id.description" resname="room_id.description">
+				<source>roomId</source>
+			</trans-unit>
+			<trans-unit id="room_name.description" resname="room_name.description">
+				<source>roomName</source>
+			</trans-unit>
+			<trans-unit id="room_public_name.description" resname="room_public_name.description">
+				<source>roomPublicName</source>
+			</trans-unit>
+			<trans-unit id="room_location_name.description" resname="room_location_name.description">
+				<source>roomLocationName</source>
+			</trans-unit>
+			<trans-unit id="room_location_url.description" resname="room_location_url.description">
+				<source>roomLocationUrl</source>
+			</trans-unit>
+			<trans-unit id="room_location_url_is_external.description" resname="room_location_url_is_external.description">
+				<source>roomLocationUrlIsExternal</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
