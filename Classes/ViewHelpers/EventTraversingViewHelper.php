@@ -9,9 +9,8 @@ namespace Checkit\VerowaImportapi\ViewHelpers;
 
 use Checkit\VerowaImportapi\Domain\Model\Event;
 use Checkit\VerowaImportapi\Domain\Repository\EventRepository;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Object\ObjectManager;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
+use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 /**
  * Index traversing.
@@ -28,6 +27,21 @@ use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 class EventTraversingViewHelper extends AbstractViewHelper
 {
     /**
+     * @var EventRepository
+     */
+    protected $eventRepository;
+    
+    /**
+     * Inject the EventRepository
+     *
+     * @param EventRepository $eventRepository
+     */
+    public function __construct(EventRepository $eventRepository)
+    {
+        $this->eventRepository = $eventRepository;
+    }
+    
+    /**
      * Init arguments.
      */
     public function initializeArguments()
@@ -37,17 +51,15 @@ class EventTraversingViewHelper extends AbstractViewHelper
         $this->registerArgument('limit', 'int', '', false, 100);
         $this->registerArgument('sort', 'string', '', false, QueryInterface::ORDER_ASCENDING);
     }
-
+    
     /**
      * Render method.
      *
      * @return array
      */
-    public function render()
+    public function render(): array
     {
-        $eventRepository = GeneralUtility::makeInstance(ObjectManager::class)->get(EventRepository::class);
-
-        return $eventRepository->findByTraversing(
+        return $this->eventRepository->findByTraversing(
             $this->arguments['event'],
             (int)$this->arguments['limit'],
             $this->arguments['sort'],
