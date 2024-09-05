@@ -38,11 +38,6 @@ defined('TYPO3') or die();
 		);
 		
 		addTableDescriptions(
-			'tx_verowaimportapi_domain_model_targetgroup',
-			'EXT:verowa_importapi/Resources/Private/Language/locallang_csh_tx_verowaimportapi_domain_model_targetgroup.xlf'
-		);
-		
-		addTableDescriptions(
 			'tx_verowaimportapi_domain_model_layer',
 			'EXT:verowa_importapi/Resources/Private/Language/locallang_csh_tx_verowaimportapi_domain_model_layer.xlf'
 		);
