@@ -11,26 +11,16 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "typo3/cms-core": "^12.4",
-        "cobweb/external_import": "^7.2",
         "cobweb/svconnector_json": "^4.2"
     },
     "autoload": {
         "psr-4": {
-            "Checkit\\VerowaImportapi\\": "Classes/"
+            "Checkit\\VerowaImportapi\\": "Classes"
         }
     },
     "extra": {
-		"typo3/cms": {
-			"extension-key": "verowa_importapi",
-			"web-dir": ".Build/web"
-		}
-	},
-	"config": {
-		"allow-plugins": {
-			"typo3/class-alias-loader": true,
-			"typo3/cms-composer-installers": true
-		},
-		"bin-dir": ".Build/bin",
-		"vendor-dir": ".Build/vendor"
-	}
+        "typo3/cms": {
+            "extension-key": "verowa_importapi"
+        }
+    }
 }
