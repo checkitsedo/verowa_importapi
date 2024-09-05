@@ -6,7 +6,7 @@
     "require": {
         "typo3/cms-core": "^12.4",
         "cobweb/external_import": "^7.2",
-        "cobweb/svconnector": "^5.1"
+        "cobweb/svconnector": "^5.1",
         "cobweb/svconnector_json": "^4.2"
     },
     "authors": [
