@@ -18,16 +18,21 @@ Verowa is a Swiss organization tool for parishes. Verowa connects your team, man
     'category' => 'plugin',
     'author' => 'Dominik Senti',
     'author_email' => 'info@senti.lu',
-    'state' => 'stable',
-    'clearCacheOnLoad' => 0,
+    'state' => 'beta',
     'version' => '1.0.2',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.4.0-12.4.99',
+            'typo3' => '12.0.0-12.4.99',
             'external_import' => '7.2.0-7.9.99',
+            'svconnector' => '5.0.0-0.0.0',
             'svconnector_json' => '4.2.0-4.9.99',
         ],
         'conflicts' => [],
         'suggests' => [],
+    ],
+    'autoload' => [
+        'psr-4' => [
+            'Checkit\\VerowaImportapi\\' => 'Classes'
+        ]
     ],
 ];
