@@ -5,12 +5,13 @@ declare(strict_types=1);
 use TYPO3\CMS\Core\Information\Typo3Version;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
 defined('TYPO3') or die();
 
 	(static function()
 	{
-		ExtensionManagementUtility::configurePlugin(
+		ExtensionUtility::configurePlugin(
 			'VerowaImportapi',
 			'Eventlist',
 			[
@@ -22,7 +23,7 @@ defined('TYPO3') or die();
 			]
 		);
 		
-		ExtensionManagementUtility::configurePlugin(
+		ExtensionUtility::configurePlugin(
 			'VerowaImportapi',
 			'Eventdetails',
 			[
