@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:verowa_importapi/Resources/Private/Language/locallang_csh" date="2021-08-08T23:07:21Z" product-name="verowa_importapi">
+		<header/>
+		<body>
+			<trans-unit id="organizer_id.description" resname="organizer_id.description">
+				<source>organizerId</source>
+			</trans-unit>
+			<trans-unit id="organizer_name.description" resname="organizer_name.description">
+				<source>organizerName</source>
+			</trans-unit>
+			<trans-unit id="organizer_phone.description" resname="organizer_phone.description">
+				<source>organizerPhone</source>
+			</trans-unit>
+			<trans-unit id="organizer_profession.description" resname="organizer_profession.description">
+				<source>organizerProfession</source>
+			</trans-unit>
+			<trans-unit id="organizer_email.description" resname="organizer_email.description">
+				<source>organizerEmail</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
