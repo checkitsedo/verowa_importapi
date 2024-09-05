@@ -1,0 +1,28 @@
+// wizards
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+	'mod {
+		wizards.newContentElement.wizardItems.plugins {
+			elements {
+				eventlist {
+					iconIdentifier = verowa_importapi-plugin-eventlist
+					title = LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowa_importapi_eventlist.name
+					description = LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowa_importapi_eventlist.description
+					tt_content_defValues {
+						CType = list
+						list_type = verowaimportapi_eventlist
+					}
+				}
+				eventdetails {
+					iconIdentifier = verowa_importapi-plugin-eventdetails
+					title = LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowa_importapi_eventdetails.name
+					description = LLL:EXT:verowa_importapi/Resources/Private/Language/locallang_db.xlf:tx_verowa_importapi_eventdetails.description
+					tt_content_defValues {
+						CType = list
+						list_type = verowaimportapi_eventdetails
+					}
+				}
+			}
+			show = *
+		}
+	}'
+);
