@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:verowa_importapi/Resources/Private/Language/locallang_csh" date="2021-08-08T23:07:21Z" product-name="verowa_importapi">
+		<header/>
+		<body>
+			<trans-unit id="room_id.description" resname="room_id.description">
+				<source>roomId</source>
+			</trans-unit>
+			<trans-unit id="room_name.description" resname="room_name.description">
+				<source>roomName</source>
+			</trans-unit>
+			<trans-unit id="room_public_name.description" resname="room_public_name.description">
+				<source>roomPublicName</source>
+			</trans-unit>
+			<trans-unit id="room_location_name.description" resname="room_location_name.description">
+				<source>roomLocationName</source>
+			</trans-unit>
+			<trans-unit id="room_location_url.description" resname="room_location_url.description">
+				<source>roomLocationUrl</source>
+			</trans-unit>
+			<trans-unit id="room_location_url_is_external.description" resname="room_location_url_is_external.description">
+				<source>roomLocationUrlIsExternal</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
