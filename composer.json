@@ -31,5 +31,5 @@
 		},
 		"bin-dir": ".Build/bin",
 		"vendor-dir": ".Build/vendor"
-	},
+	}
 }
